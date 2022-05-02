@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  padding: 30px;
+}
+
+.img-background{
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../generic_vue_header.jpg);
+}

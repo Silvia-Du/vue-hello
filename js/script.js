@@ -4,6 +4,7 @@ const app = new Vue({
 
   data:{
     message: 'Questa è la prima cosa che scrivo in Vue',
+    image: 'img-background'
   }
 
 })
