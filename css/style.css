@@ -10,10 +10,20 @@ body{
 }
 
 .img-background{
-  width: 200px;
+  width: 300px;
   height: 200px;
   margin: 30px auto;
   background-position: center;
   background-size: cover;
   background-image: url(../generic_vue_header.jpg);
+}
+
+img{
+  margin: 20px auto;
+  width: 300px;
+  display: block;
+}
+
+.hide{
+  display: none;
 }

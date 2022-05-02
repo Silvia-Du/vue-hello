@@ -4,7 +4,16 @@ const app = new Vue({
 
   data:{
     message: 'Questa è la prima cosa che scrivo in Vue',
-    image: 'img-background'
+    sfondo: 'img-background',
+    image: './generic_vue_header.jpg',
+    visibilità: 'hide',
+    visible: false
+  },
+
+  methods:{
+    toggleGetImage(){
+      this.visible = ! this.visible;
+    }
   }
 
 })

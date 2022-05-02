@@ -13,7 +13,12 @@
   <div id="app">
 
     <h1>{{message}}</h1>
-    <div :class="image"></div>
+    <img src="./generic_vue_header.jpg" alt="">
+
+    <button @click ="toggleGetImage()">Guarda un'altra img</button>
+    <div :class="sfondo"></div>
+
+    <div :class="[{'hide': toggleGetImage}, sfondo]"></div>
 
   </div>
 
