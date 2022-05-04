@@ -11,15 +11,17 @@
 <body>
 
   <div id="app">
-
-    <h1>{{message}}</h1>
-    <img src="./generic_vue_header.jpg" alt="">
-
-    <button @click ="toggleGetImage()">Guarda un'altra img</button>
-    <div :class="sfondo"></div>
-
-    <div :class="[{'hide': toggleGetImage}, sfondo]"></div>
-
+    <main>
+      <div class="container">
+        <h1>{{message}}</h1>
+        <img :src="image" alt="">
+    
+        <div @click ="toggleGetImage()" class="button">{{buttonText}}</div>
+    
+        <img :class="[{'hide': visible}, {'rounded': isRounded}]" :src="image" alt="">  
+      </div>
+    </main>
+    
   </div>
 
   <script src="js/script.js"></script>
